@@ -17,19 +17,24 @@ const Detail = () => {
 
 
     return (
-        <div >
-            <div><Link to='/listeavisdepassage' >precedent</Link></div>
+        <div>
+             <div><Link to='/listeavisdepassage' >precedent</Link></div>
+        
+        <div className='mainDetail'>
+           
+            
             <div>
                 <div className='text-center detail'>
 
-                    <div><h2>{avi.nom}</h2></div>
+                <div className='text-center'><h1>Detail du client "{avi.nom}"</h1> </div>
 
-                    <div><h2>{avi.date}</h2></div>
+                    <div><h2>le {avi.date}</h2></div>
                     <div><h2>observation : </h2></div>
                     <div>{avi.observation} </div>
                 </div>
 
             </div>
+        </div>
         </div>
     )
 }
