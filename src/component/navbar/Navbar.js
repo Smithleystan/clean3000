@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="nav">
-                <Link to='/' className="nav__brand"> cleen3000 </Link> 
+                <Link to='/' className="nav__brand"> <img src={logo} alt="" /> </Link> 
                 <ul className={hidden}>
                     <li className="nav__item"><Link to='/' className="nav__link" onClick={click} > Accueil</Link></li>
                     <li className="nav__item"><Link to='/listeavisdepassage' className="nav__link" onClick={click} >Avis de passage</Link> </li>
