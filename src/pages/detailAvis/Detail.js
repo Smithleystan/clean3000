@@ -30,7 +30,7 @@ const Detail = () => {
 
                     <div><h2>le {avi.date}</h2></div>
                     <div><h2>observation : </h2></div>
-                    <div>{avi.observation} </div>
+                    <div className="observation">{avi.observation} </div>
                 </div>
 
             </div>
