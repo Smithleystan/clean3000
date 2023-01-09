@@ -18,7 +18,7 @@ li {
     list-style: none;
 }
 
-.nav__link{
+.nav__link {
     text-decoration: none;
     color: white
 }
@@ -28,7 +28,9 @@ li {
     align-items: center;
     justify-content: space-around;
     height: 8vh;
-    background: rgb(0, 28, 73);
+    background: gray;
+
+
 }
 
 .nav__brand {
@@ -56,6 +58,8 @@ li {
     }
 }
 
+
+
 @media screen and (max-width : 768px) {
     .nav__toggler {
         display: block;
@@ -67,7 +71,7 @@ li {
         right: 0;
         width: 50%;
         height: 93vh;
-        background: rgb(0, 28, 73);
+        background: gray;
         flex-direction: column;
         transform: translateX(100%);
         transition: all 0.5s;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.scss"
+import logo from '../../logo/logo-clean3000.png'
 
 
 const Navbar = () => {
@@ -11,10 +12,10 @@ const Navbar = () => {
     return (
         <>
             <nav className="nav">
-                <Link to='/' className="nav__brand">clean3000</Link> 
+                <Link to='/' className="nav__brand"> cleen3000 </Link> 
                 <ul className={hidden}>
-                    <li className="nav__item"><Link to='/' className="nav__link"> Accueil</Link></li>
-                    <li className="nav__item"><Link className="nav__link">Avis de passage</Link> </li>
+                    <li className="nav__item"><Link to='/' className="nav__link" onClick={click} > Accueil</Link></li>
+                    <li className="nav__item"><Link to='/listeavisdepassage' className="nav__link" onClick={click} >Avis de passage</Link> </li>
 
 
 
