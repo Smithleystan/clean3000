@@ -20,7 +20,16 @@ li {
 
 .nav__link {
     text-decoration: none;
-    color: white
+    color: white;
+    font-weight: bolder;
+    height: 100%;
+    
+}
+
+.nav__link:hover {
+background-color: white;
+color : gray;
+transition:  all 2s;
 }
 
 .nav {
@@ -32,6 +41,8 @@ li {
 
 
 }
+
+
 
 .nav__brand {
     text-transform: uppercase;
@@ -76,10 +87,13 @@ img {
         right: 0;
         width: 50%;
         height: 93vh;
-        background: gray;
+        background: rgba(128, 128, 128, 0.955);
         flex-direction: column;
         transform: translateX(100%);
         transition: all 0.5s;
+        color : black;
+        font-weight: bolder;
+        font-size: x-large;
     }
 
     .test {

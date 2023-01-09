@@ -17,8 +17,8 @@ const Detail = () => {
 
 
     return (
-        <div>
-             <div><Link to='/listeavisdepassage' >precedent</Link></div>
+        <div className='global'>
+             <div><Link to='/listeavisdepassage'  ><input type="button" value="Precedent" className='btnPrecedent'/></Link></div>
         
         <div className='mainDetail'>
            

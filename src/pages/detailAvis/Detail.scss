@@ -2,9 +2,24 @@
     background-color: gray;
     max-width: 80%;
     margin: 0 auto;
-    color: white
+    color: white;
+    border-radius: 10px;
 }
 
 .mainDetail {
     padding-top: 10rem;
+}
+
+.btnPrecedent {
+    width: 10%;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+
+}
+
+.global {
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
