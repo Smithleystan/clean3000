@@ -7,6 +7,8 @@ import Root from './Root';
 import avisReducer from './slices'
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
+import 'antd/dist/reset.css'
+
 
 
 const store = configureStore({

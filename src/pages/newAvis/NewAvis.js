@@ -3,11 +3,25 @@ import { useDispatch } from 'react-redux'
 import "../../Bootstrap/css/bootstrap.css"
 import { add } from '../../slices'
 import './newAvis.scss'
+import { Button, Modal } from 'antd'
 
 
 
 
 const NewAvis = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // antd
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  // fin antd
+
   const [form, setForm] = useState({
     nom: "",
     date: "",
@@ -31,6 +45,7 @@ const NewAvis = () => {
       date: '',
       observation: ''
     })
+    showModal()
 
 
   }
@@ -56,8 +71,14 @@ const NewAvis = () => {
         </div>
       </div>
 
+     
+      <Modal title="Confirmation" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+       <div>Avis du client ajouter à la base de donnée</div>
+      </Modal>
 
     </div>
+
+
 
   )
 }
