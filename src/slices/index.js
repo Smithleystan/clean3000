@@ -12,7 +12,7 @@ export const avis = createSlice({
             state.push({
                 id : Date.now(),
                 nom : payload.nom,
-                date : payload.date,
+                date : new Date().toLocaleDateString(),
                 observation : payload.observation
             })
 

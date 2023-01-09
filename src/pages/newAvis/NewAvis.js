@@ -61,8 +61,8 @@ const NewAvis = () => {
           <form action="" onSubmit={(e) => e.preventDefault()}>
             <div><label htmlFor="nom"><h2>Nom entreprise ou client</h2></label></div>
             <div><input type="text" id='nom' name='nom' placeholder='saisir nom' value={form.nom} onChange={saisie} required /></div>
-            <div><label htmlFor="date" ><h2>Date d'intervention</h2></label></div>
-            <div><input type="date" name='date' id='date' value={form.date} onChange={saisie} required /></div>
+            {/* <div><label htmlFor="date" ><h2>Date d'intervention</h2></label></div>
+            <div><input type="date" name='date' id='date' value={form.date} onChange={saisie} required /></div> */}
             <label htmlFor="observation" ><h2>Observation</h2></label>
             <div><textarea rows={5} name='observation' id='observation' placeholder='saisir observation' value={form.observation} onChange={saisie} required /></div>
             <div><h2>Merci de votre confiance</h2> </div>
