@@ -18,7 +18,15 @@ const NewAvis = () => {
   };
   const handleOk = () => {
     setIsModalOpen(false);
+
+    dispatch(add({ nom: form.nom, date: form.date, observation: form.observation }))
+    setForm({
+      nom: '',
+      date: '',
+      observation: ''
+    })
     navigate("/")
+
   };
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -43,12 +51,6 @@ const NewAvis = () => {
   const dispatch = useDispatch()
   const valider = () => {
 
-    dispatch(add({ nom: form.nom, date: form.date, observation: form.observation }))
-    setForm({
-      nom: '',
-      date: '',
-      observation: ''
-    })
     showModal()
 
 
