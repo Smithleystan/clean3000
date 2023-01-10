@@ -18,23 +18,29 @@ const NewAvis = () => {
   };
   const handleOk = () => {
     setIsModalOpen(false);
-    if (form.nom && form.observation ){
+    if (form.nom && form.observation) {
 
-    dispatch(add({ nom: form.nom, date: form.date, observation: form.observation }))
-    setForm({
-      nom: '',
-      date: '',
-      observation: ''
-    })
-    navigate("/")
+      dispatch(add({ nom: form.nom, date: form.date, observation: form.observation }))
+      setForm({
+        nom: '',
+        date: '',
+        observation: ''
+      })
+      navigate("/")
 
-    }else{
-      alert ("veillez remplir les champs")
+    } else {
+      alert("veillez remplir les champs")
     }
 
   };
   const handleCancel = () => {
     setIsModalOpen(false);
+    setForm({
+      nom: '',
+      date: '',
+      observation: ''
+    })
+
   };
   // fin antd
 
