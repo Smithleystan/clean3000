@@ -18,6 +18,7 @@ const NewAvis = () => {
   };
   const handleOk = () => {
     setIsModalOpen(false);
+    if (form.nom && form.observation ){
 
     dispatch(add({ nom: form.nom, date: form.date, observation: form.observation }))
     setForm({
@@ -26,6 +27,10 @@ const NewAvis = () => {
       observation: ''
     })
     navigate("/")
+
+    }else{
+      alert ("veillez remplir les champs")
+    }
 
   };
   const handleCancel = () => {
@@ -79,7 +84,7 @@ const NewAvis = () => {
 
 
       <Modal title="Confirmation" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <div>Avis du client ajouter à la base de donnée</div>
+        <div>Confirmer ajout de l'avi dans la base de donée</div>
       </Modal>
 
     </div>
