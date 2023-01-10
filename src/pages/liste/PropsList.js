@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../../Bootstrap/css/bootstrap.css"
-import './Liste.scss'
+import './Liste.scss' 
 
 
 const PropsList = ({ nom, id, date, obersvation }) => {

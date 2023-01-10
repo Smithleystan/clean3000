@@ -4,6 +4,8 @@ import "../../Bootstrap/css/bootstrap.css"
 import { add } from '../../slices'
 import './newAvis.scss'
 import { Button, Modal } from 'antd'
+import { useNavigate } from 'react-router-dom'
+
 
 
 
@@ -16,6 +18,7 @@ const NewAvis = () => {
   };
   const handleOk = () => {
     setIsModalOpen(false);
+    navigate("/")
   };
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -36,6 +39,7 @@ const NewAvis = () => {
     }))
 
   }
+  const navigate = useNavigate()
   const dispatch = useDispatch()
   const valider = () => {
 
@@ -71,9 +75,9 @@ const NewAvis = () => {
         </div>
       </div>
 
-     
+
       <Modal title="Confirmation" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-       <div>Avis du client ajouter à la base de donnée</div>
+        <div>Avis du client ajouter à la base de donnée</div>
       </Modal>
 
     </div>
